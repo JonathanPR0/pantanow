@@ -2,14 +2,9 @@ import { useState } from 'react';
 import { InstagramLogo } from 'phosphor-react';
 import Hamburguer from './Hamburger';
 
-function Header() {
+function Header({ links }) {
   const [isOpened, setIsOpened] = useState(false);
-  const links = [
-    { name: 'Início', href: '#start' },
-    { name: 'O que é?', href: '#what-is' },
-    { name: 'Importância', href: '#importance' },
-    { name: 'Queimadas', href: '#fires' },
-  ];
+  const [smoothScroll, setSmoothScroll] = useState(false);
   function handleClick() {
     setIsOpened(!isOpened);
   }
@@ -19,9 +14,9 @@ function Header() {
 
   return (
     <header
-      className={`w-full fixed top-0 left-0 shadow-md ${background} py-4 px-6 flex justify-center`}
+      className={`w-full fixed z-50 top-0 left-0 shadow-md ${background} py-4 px-6 flex justify-center`}
     >
-      <nav className="w-full lg:max-w-5xl md:max-w-4xl flex items-center justify-between transition-colors ease-in">
+      <div className="w-full lg:max-w-5xl md:max-w-4xl flex items-center justify-between transition-colors ease-in">
         <h1
           className={`text-2xl font-bold ${
             !isOpened ? 'text-secondaryColors-500' : 'text-white'
@@ -42,8 +37,16 @@ function Header() {
             } md:static transition-all ease-in text-2xl md:text-base md:visible`}
           >
             {links.map((link, i) => (
-              <li key={i} className="block sm:inline-block md:ml-8">
-                <a href={link.href} onClick={() => setIsOpened(false)}>
+              <li
+                key={i}
+                className="block sm:inline-block md:ml-8 scroll-smooth"
+              >
+                <a
+                  href={link.href}
+                  onClick={() => {
+                    setIsOpened(false);
+                  }}
+                >
                   {link.name}
                 </a>
               </li>
@@ -53,7 +56,7 @@ function Header() {
             </li>
             <li className="text-base font-normal">
               <a
-                href="instagram.com/jonathan.pr0/"
+                href="https://instagram.com/"
                 className="flex flex-row md:hidden"
               >
                 <InstagramLogo size={24} className="mr-1" />
@@ -62,7 +65,7 @@ function Header() {
             </li>
           </ul>
         </nav>
-      </nav>
+      </div>
     </header>
   );
 }

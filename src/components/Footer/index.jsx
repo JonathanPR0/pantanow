@@ -16,10 +16,7 @@ function Footer() {
         </p>
         <p className="mb-6">Todos os direitos reservados.</p>
         <p className="self-center text-primaryColors-300">
-          <a
-            href="instagram.com/jonathan.pr0/"
-            className="flex flex-row md:hidden"
-          >
+          <a href="https://instagram.com/" className="flex flex-row">
             <InstagramLogo size={24} className="mr-1" />
             <p className="hover:underline underline-offset-1">Instagram</p>
           </a>

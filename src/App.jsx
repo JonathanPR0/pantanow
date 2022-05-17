@@ -1,28 +1,27 @@
 import Header from './components/Header';
+import Main from './components/Main';
+import WhatIs from './components/Sections/WhatIs';
+import TTD from './components/Sections/TTD';
+import Card from './components/Sections/Card';
 import Footer from './components/Footer';
-import pantanal from './assets/pantanal.jpg';
+import template from './assets/template';
 
 function App() {
   return (
     <>
-      <Header />
-      <main className="flex flex-col items-center bg-primaryColors-300 h-screen">
-        <img
-          src={pantanal}
-          alt="árvores vistas de um local alto indicando a aparência do pantanal"
-          className="w-screen h-[40vh] object-cover mt-16"
-        />
-        <div className="mx-6 mt-6 mb-12 text-center">
-          <h1 className="text-4xl font-bold text-brandGreen mb-6">
-            Pequeno em território, gigante em natureza
-          </h1>
-          <p className="text-lg">
-            O Pantanal, apesar de ser o menor bioma do Brasil, traz uma
-            riquíssima fauna e flora
-          </p>
+      <Header links={template.links} />
+      <Main body={template.main} />
+      <WhatIs body={template.whatIs} />
+      <TTD body={template.importance}>Gráfico</TTD>
+      <TTD body={template.fires}>
+        <div className="flex flex-col md:flex-row gap-5">
+          {template.cards.map((card) => (
+            <Card body={card} key={card.title}>
+              {card.chart ? card.chart : null}
+            </Card>
+          ))}
         </div>
-      </main>
-
+      </TTD>
       <Footer />
     </>
   );
