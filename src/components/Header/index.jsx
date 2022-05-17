@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { InstagramLogo } from 'phosphor-react';
+import { Link } from 'react-scroll';
 import Hamburguer from './Hamburger';
 
 function Header({ links }) {
   const [isOpened, setIsOpened] = useState(false);
-  const [smoothScroll, setSmoothScroll] = useState(false);
   function handleClick() {
     setIsOpened(!isOpened);
   }
@@ -41,14 +41,16 @@ function Header({ links }) {
                 key={i}
                 className="block sm:inline-block md:ml-8 scroll-smooth"
               >
-                <a
-                  href={link.href}
-                  onClick={() => {
-                    setIsOpened(false);
-                  }}
+                <Link
+                  to={link.href}
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                  onClick={() => setIsOpened(false)}
                 >
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
             <li className="uppercase md:hidden py-4 px-8 bg-white text-primaryColors-500 text-base rounded-full">

@@ -12,7 +12,7 @@ const TTD = ({ body, children }) => {
       <h2 className="text-3xl text-secondaryColors-500 font-bold mb-6">
         {body.title}
       </h2>
-      <div className="flex flex-col gap-4 mb-8 text-left text-base ">
+      <div className="flex flex-col gap-4 text-left text-base ">
         {body.content.map((paragraph, i) => (
           <p className="text-base" key={i}>
             {paragraph}
