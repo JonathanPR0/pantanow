@@ -43,7 +43,7 @@ const template = {
       'A presença de uma grande diversidade de plantas e animais, como mamíferos, anfíbios, répteis, aves e insetos de devem, em partes por sua localização privilegiada.',
     ],
     chart: {
-      label: 'Fauna presente no Pantanal',
+      label: 'Espécies presente no Pantanal',
       data: {
         labels: ['Mamíferos', 'Anfíbios', 'Flora', 'Peixes', 'Aves', 'Répteis'],
         datasets: [
@@ -73,7 +73,7 @@ const template = {
     sectionName: 'Queimadas',
     title: 'Pantanal em chamas',
     content: [
-      'Só em 2020, o fogo já consumiu 17.500 km² de mata, o equivalente a mais de 10% da área do total de um dos biomas mais importantes do mundo. E quase 60% dos focos de incêndios no Pantanal foram provocados por ações humanas',
+      'Em 2020, até o mês de Setembro, o fogo já tinha consumido mais de 17.500 km² de mata, o equivalente a mais de 10% da área do total de um dos biomas mais importantes do mundo. E quase 60% dos focos de incêndios no Pantanal foram provocados por ações humanas',
     ],
     chart: {
       source: {
@@ -106,9 +106,9 @@ const template = {
           },
         ],
       },
-      background: 'bg-white',
-      id: '#fires',
     },
+    background: 'bg-white',
+    id: '#fires',
   },
   cards: [
     {

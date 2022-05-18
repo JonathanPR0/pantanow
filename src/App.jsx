@@ -30,11 +30,11 @@ function App() {
         <LineChart chartData={template.fires.chart.data} />
         <a
           href={template.fires.chart.source.src}
-          className="text-[10px] px-10 py-2 bg-primaryColors-300 rounded-md hover:bg-primaryColors-400 transition-colors mb-8"
+          className="text-[10px] px-10 py-2 bg-primaryColors-300 rounded-md hover:bg-primaryColors-400 transition-colors"
         >
           {template.fires.chart.source.title}
         </a>
-        <div className="flex flex-col md:flex-row gap-5">
+        <div className="flex flex-col md:flex-row gap-5 mt-8">
           {template.cards.map((card) => (
             <Card body={card} key={card.title}>
               {card.chart ? card.chart : null}

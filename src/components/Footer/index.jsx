@@ -2,7 +2,7 @@ import { InstagramLogo } from 'phosphor-react';
 
 function Footer() {
   return (
-    <footer className="w-full px-6 py-[64px] bg-primaryColors-500 text-white">
+    <footer className="flex md:items-center md:text-center w-full px-6 py-[64px] bg-primaryColors-500 text-white">
       <div className="lg:max-w-5xl md:max-w-4xl flex flex-col  mx-auto">
         <h1 className="text-4xl font-bold text-white mb-6">#Pantanow</h1>
         <p className="mb-3">

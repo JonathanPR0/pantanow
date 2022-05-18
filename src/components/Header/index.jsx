@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { InstagramLogo } from 'phosphor-react';
+import { GithubLogo } from 'phosphor-react';
 import { Link } from 'react-scroll';
 import Hamburguer from './Hamburger';
 
@@ -16,7 +16,7 @@ function Header({ links }) {
     <header
       className={`w-full fixed z-50 top-0 left-0 shadow-md ${background} py-4 px-6 flex justify-center`}
     >
-      <div className="w-full lg:max-w-5xl md:max-w-4xl flex items-center justify-between transition-colors ease-in">
+      <div className="w-full md:max-w-3xl lg:max-w-4xl flex items-center justify-between transition-colors ease-in">
         <h1
           className={`text-2xl font-bold ${
             !isOpened ? 'text-secondaryColors-500' : 'text-white'
@@ -39,7 +39,7 @@ function Header({ links }) {
             {links.map((link, i) => (
               <li
                 key={i}
-                className="block sm:inline-block md:ml-8 scroll-smooth"
+                className="block sm:inline-block md:ml-8 scroll-smooth cursor-pointer"
               >
                 <Link
                   to={link.href}
@@ -54,15 +54,15 @@ function Header({ links }) {
               </li>
             ))}
             <li className="uppercase md:hidden py-4 px-8 bg-white text-primaryColors-500 text-base rounded-full">
-              Proteja o pantanal
+              Conheça outros biomas
             </li>
             <li className="text-base font-normal">
               <a
-                href="https://instagram.com/"
+                href="https://github.com/JonathanPR0/pantanow"
                 className="flex flex-row md:hidden"
               >
-                <InstagramLogo size={24} className="mr-1" />
-                Instagram
+                <GithubLogo size={24} className="mr-1" />
+                Github
               </a>
             </li>
           </ul>
