@@ -26,8 +26,8 @@ const template = {
     sectionName: 'O que é?',
     title: 'Maior planície alagada do mundo',
     content: [
-      'O Pantanal ocupa aproximadamente 2% do Território Nacional. Entretanto, é reconhecido como a maior planície de inundação contínua do Planeta Terra',
-      'Apesar de pequeno em comparação com outros biomas brasileiros, o Pantanal tem uma área maior que a Grécia, Inglaterra ou Portugal e corresponde a duas vezes ao tamanho do Panamá.',
+      <p className="text-base">O Pantanal <strong>ocupa aproximadamente 2%</strong> do Território Nacional. Entretanto, é reconhecido como a maior planície de inundação contínua do Planeta Terra</p>,
+      <p className="text-base">Apesar de pequeno em comparação com outros biomas brasileiros, o Pantanal tem uma área maior que a Grécia, Inglaterra ou Portugal e corresponde a duas vezes ao tamanho do Panamá.</p>,
     ],
     img: {
       src: whatIsImage,
@@ -39,8 +39,8 @@ const template = {
     sectionName: 'Importância',
     title: 'Fauna e flora',
     content: [
-      'Pela sua enorme biodiversidade o Pantanal é Patrimônio Nacional pela Constituição Federal e considerado Reserva da Biosfera e Patrimônio Natural da Humanidade pela Unesco, o que não impede a crescente desflorestação e destruição',
-      'A presença de uma grande diversidade de plantas e animais, como mamíferos, anfíbios, répteis, aves e insetos de devem, em partes por sua localização privilegiada.',
+      <p className="text-base">Pela sua enorme biodiversidade o Pantanal é Patrimônio Nacional pela Constituição Federal e considerado Reserva da Biosfera e Patrimônio Natural da Humanidade pela Unesco, o que não impede a crescente <strong>desflorestação e destruição</strong></p>,
+      <p className="text-base">A presença de uma <strong>grande diversidade de plantas e animais</strong>, como mamíferos, anfíbios, répteis, aves e insetos de devem, em partes por sua localização privilegiada.</p>,
     ],
     chart: {
       label: 'Espécies presente no Pantanal',
@@ -73,7 +73,7 @@ const template = {
     sectionName: 'Queimadas',
     title: 'Pantanal em chamas',
     content: [
-      'Em 2020, até o mês de Setembro, o fogo já tinha consumido mais de 17.500 km² de mata, o equivalente a mais de 10% da área do total de um dos biomas mais importantes do mundo. E quase 60% dos focos de incêndios no Pantanal foram provocados por ações humanas',
+      <p className="text-base">Em 2020, até o mês de Setembro, o fogo já tinha consumido mais de <strong>17.500 km²</strong> de mata, o equivalente a mais de 10% da área do total de um dos biomas mais importantes do mundo. E quase <strong>60%</strong> dos focos de incêndios no Pantanal foram provocados por <strong>ações humanas</strong></p>,
     ],
     chart: {
       source: {
@@ -102,19 +102,19 @@ const template = {
               8258,
             ],
             fill: true,
-            borderColor: 'rgb(75, 192, 192)',
+            borderColor: 'rgb(255,186,124)',
           },
         ],
       },
     },
-    background: 'bg-white',
+    background: 'bg-complementaryColors-300',
     id: '#fires',
   },
   cards: [
     {
       title: 'Perda de vegetação',
       content:
-        'Em 2020, segundo Instuto Nacional de Pesquisas do Pantanal (INPP), o bioma já viu cerca de 23 mil km² serem consumidos pelas chamas',
+        <p className="text-base text-left text-secondaryColors-400">Em 2020, segundo Instuto Nacional de Pesquisas do Pantanal (INPP), o bioma já viu cerca de <strong>23 mil km²</strong> serem consumidos pelas chamas</p>,
       chart: (
         <BarChart
           chartData={{
@@ -124,10 +124,10 @@ const template = {
                 label: 'Perda acumulada (em km²) de vegetação no Pantanal',
                 data: [2100, 23000],
                 backgroundColor: [
-                  'rgba(75, 192, 192, 0.2)',
-                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(228, 144, 82, 0.2)',
+                  'rgba(255,186,124, 0.2)',
                 ],
-                borderColor: ['rgb(75, 192, 192)', 'rgb(54, 162, 235)'],
+                borderColor: ['rgb(228, 144, 82)', 'rgb(255,186,124)'],
                 borderWidth: 1,
               },
             ],
@@ -138,7 +138,7 @@ const template = {
     {
       title: 'Espécies de animais afetadas',
       content:
-        'As queimadas que ocorreram no Pantanal em 2020 afetaram pelo menos 65 milhões de animais vertebrados nativos e 4 bilhões de invertebrados, com base nas densidades de espécies conhecidas.',
+        <p className="text-base text-left text-secondaryColors-400">As queimadas que ocorreram no Pantanal em 2020 afetaram pelo menos <strong>65 milhões</strong> de animais vertebrados nativos e <strong>4 bilhões</strong> de invertebrados, com base nas densidades de espécies conhecidas.</p>,
     },
   ],
 };

@@ -18,9 +18,8 @@ function Header({ links }) {
     >
       <div className="w-full md:max-w-3xl lg:max-w-4xl flex items-center justify-between transition-colors ease-in">
         <h1
-          className={`text-2xl font-bold ${
-            !isOpened ? 'text-secondaryColors-500' : 'text-white'
-          } transition-colors`}
+          className={`text-2xl font-bold ${!isOpened ? 'text-secondaryColors-500' : 'text-white'
+            } transition-colors`}
         >
           #Panta
           <span
@@ -32,9 +31,8 @@ function Header({ links }) {
         <nav className={`${isOpened ? 'active' : null}`}>
           <Hamburguer click={handleClick} />
           <ul
-            className={`w-full md:w-auto md:h-auto font-bold md:font-normal absolute top-12 md:top-0 left-0 flex flex-col md:flex-row items-center gap-y-12 pt-10 md:pt-0 ${background} ${
-              isOpened ? 'h-screen visible' : 'h-0 pt-0 invisible'
-            } md:static transition-all ease-in text-2xl md:text-base md:visible`}
+            className={`w-full md:w-auto md:h-auto font-bold md:font-normal absolute top-12 md:top-0 left-0 flex flex-col md:flex-row items-center gap-y-12 pt-10 md:pt-0 ${background} ${isOpened ? 'h-screen visible' : 'h-0 pt-0 invisible'
+              } md:static transition-all ease-in text-2xl md:text-base md:visible`}
           >
             {links.map((link, i) => (
               <li
@@ -54,12 +52,12 @@ function Header({ links }) {
               </li>
             ))}
             <li className="uppercase md:hidden py-4 px-8 bg-white text-primaryColors-500 text-base rounded-full">
-              Conheça outros biomas
+              <a href="https://instagram.com/" target="_blank">Conheça outros biomas</a>
             </li>
             <li className="text-base font-normal">
               <a
                 href="https://github.com/JonathanPR0/pantanow"
-                className="flex flex-row md:hidden"
+                className="flex flex-row md:hidden p-2" target="_blank"
               >
                 <GithubLogo size={24} className="mr-1" />
                 Github

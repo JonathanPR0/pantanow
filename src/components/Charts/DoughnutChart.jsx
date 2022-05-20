@@ -4,9 +4,9 @@ import { Doughnut } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const DoughnutChart = ({ chartData }) => {
+const DoughnutChart = ({ chartData, maxWidth }) => {
   return (
-    <div className="w-full px-5">
+    <div className={`w-full px-5 max-w-[500px] mx-auto`}>
       <Doughnut
         data={chartData}
         options={{

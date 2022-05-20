@@ -11,11 +11,11 @@ function WhatIs({ body }) {
         <h2 className="text-3xl text-secondaryColors-500 font-bold mb-6">
           {body.title}
         </h2>
-        <div className="flex flex-col gap-4 mb-8">
-          {body.content.map((paragraph, i) => (
-            <p className="text-base" key={i}>
+        <div className="flex flex-col gap-4 mb-8 text-secondaryColors-400">
+          {body.content.map((paragraph) => (
+            <>
               {paragraph}
-            </p>
+            </>
           ))}
         </div>
         <img

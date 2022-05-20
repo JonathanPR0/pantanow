@@ -20,7 +20,7 @@ ChartJS.register(
 );
 
 const BarChart = ({ chartData }) => {
-  return <Bar data={chartData} className="max-w-full" />;
+  return <Bar data={chartData} />;
 };
 
 export default BarChart;
