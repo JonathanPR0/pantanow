@@ -8,6 +8,8 @@ const template = {
     { name: 'O que é?', href: '#what-is' },
     { name: 'Importância', href: '#importance' },
     { name: 'Queimadas', href: '#fires' },
+    { name: 'Como ajudar?', href: '#howToHelp' },
+
   ],
   main: {
     img: {
@@ -26,7 +28,7 @@ const template = {
     sectionName: 'O que é?',
     title: 'Maior planície alagada do mundo',
     content: [
-      <p className="text-base">O Pantanal <strong>ocupa aproximadamente 2%</strong> do Território Nacional. Entretanto, é reconhecido como a maior planície de inundação contínua do Planeta Terra</p>,
+      <p className="text-base">O Pantanal <strong>ocupa aproximadamente 2%</strong> do Território Nacional. Entretanto, é reconhecido como a maior planície de inundação contínua do Planeta Terra.</p>,
       <p className="text-base">Apesar de pequeno em comparação com outros biomas brasileiros, o Pantanal tem uma área maior que a Grécia, Inglaterra ou Portugal e corresponde a duas vezes ao tamanho do Panamá.</p>,
     ],
     img: {
@@ -39,8 +41,8 @@ const template = {
     sectionName: 'Importância',
     title: 'Fauna e flora',
     content: [
-      <p className="text-base">Pela sua enorme biodiversidade o Pantanal é Patrimônio Nacional pela Constituição Federal e considerado Reserva da Biosfera e Patrimônio Natural da Humanidade pela Unesco, o que não impede a crescente <strong>desflorestação e destruição</strong></p>,
-      <p className="text-base">A presença de uma <strong>grande diversidade de plantas e animais</strong>, como mamíferos, anfíbios, répteis, aves e insetos de devem, em partes por sua localização privilegiada.</p>,
+      <p className="text-base">Pela sua enorme biodiversidade o Pantanal é Patrimônio Nacional pela Constituição Federal e considerado Reserva da Biosfera e Patrimônio Natural da Humanidade pela Unesco, o que não impede a crescente <strong>desflorestação e destruição</strong>.</p>,
+      <p className="text-base">A presença de uma <strong>grande diversidade de plantas e animais</strong>, como mamíferos, anfíbios, répteis, aves e insetos se devem, em partes por sua localização privilegiada. Porém, por causa de sua destruição, há diversas espécies que estão sendo ameaçadas de extinção, como por exemplo a onça-pintada e a arara-azul. Portanto, se não tivermos cuidado pode ser que ocorra um dano irreparável no bioma.</p>,
     ],
     chart: {
       label: 'Espécies presente no Pantanal',
@@ -73,7 +75,7 @@ const template = {
     sectionName: 'Queimadas',
     title: 'Pantanal em chamas',
     content: [
-      <p className="text-base">Em 2020, até o mês de Setembro, o fogo já tinha consumido mais de <strong>17.500 km²</strong> de mata, o equivalente a mais de 10% da área do total de um dos biomas mais importantes do mundo. E quase <strong>60%</strong> dos focos de incêndios no Pantanal foram provocados por <strong>ações humanas</strong></p>,
+      <p className="text-base">Em 2020, até o mês de Setembro, o fogo já tinha consumido mais de <strong>17.500 km²</strong> de mata, o equivalente a mais de 10% da área do total de um dos biomas mais importantes do mundo. E quase <strong>60%</strong> dos focos de incêndios no Pantanal foram provocados por <strong>ações humanas</strong>.</p>,
     ],
     chart: {
       source: {
@@ -110,11 +112,38 @@ const template = {
     background: 'bg-complementaryColors-300',
     id: '#fires',
   },
+  howToHelp: {
+    sectionName: 'Como ajudar?',
+    title: 'Salve o Pantanal',
+    content: [
+      <p className="text-base">O pantanal é um lindo bioma que compõe parte do território brasileiro, e não podemos deixar que esta ampla riqueza seja destruída. Portanto, vamos ver algumas formas protegê-lo.</p>,
+    ],
+    accordion: [
+      {
+        title: "Contribua com organizações que defendem o bioma",
+        content: "Há diversas dessas organizações que atuam diretamente no combate contra as queimadas e ajudam os animais que sofrem pela seca, caça e contrabandos na região. Sendo assim, uma forma de ajudar a cuidar desse belo bioma é apoiando uma dessas organizações."
+      },
+      {
+        title: "Participe de iniciativas para a proteção do meio ambiente",
+        content: "Busque na sua cidade por projetos de reflorestamento, coletas de lixo e conscientização ambiental, por exemplo. Além disso, reciclar e reutilizar são outros exemplos de ações que podem ser feitas para ajudar não só o pantanal, mas também outros biomas."
+      },
+      {
+        title: "Fiscalize as ações das autoridades",
+        content: "Como um governo democrático, podemos fiscalizar as ações tomadas pelo poder público, garantindo que ele tome decisões que sejam favoráveis ao meio ambiente."
+      },
+      {
+        title: "Divulgue!",
+        content: "Com o passar do tempo, o número de pesquisas sobre as queimadas no Pantanal diminuiu consideravelmente. Portanto, além de estarmos informados sobre esse tema, também precisamos compartilhar com outros, assim podemos prevenir problemas futuros."
+      },
+    ],
+    background: 'bg-primaryColors-200',
+    id: '#howToHelp',
+  },
   cards: [
     {
       title: 'Perda de vegetação',
       content:
-        <p className="text-base text-left text-secondaryColors-400">Em 2020, segundo Instuto Nacional de Pesquisas do Pantanal (INPP), o bioma já viu cerca de <strong>23 mil km²</strong> serem consumidos pelas chamas</p>,
+        <p className="text-base text-left text-secondaryColors-400">Em 2020, segundo o Instuto Nacional de Pesquisas do Pantanal (INPP), o bioma viu cerca de <strong>23 mil km²</strong> serem consumidos pelas chamas, um aumento de mais de 1000%, quando comparada aos valor de 2000 a 2018 juntos.</p>,
       chart: (
         <BarChart
           chartData={{

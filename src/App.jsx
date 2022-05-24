@@ -5,6 +5,7 @@ import TTD from './components/Sections/TTD';
 import DoughnutChart from './components/Charts/DoughnutChart';
 import LineChart from './components/Charts/LineChart';
 import Card from './components/Sections/Card';
+import AccordionList from './components/AccordionList';
 import Footer from './components/Footer';
 import template from './assets/template';
 
@@ -41,6 +42,9 @@ function App() {
             </Card>
           ))}
         </div>
+      </TTD>
+      <TTD body={template.howToHelp}>
+        <div className="pt-5">{template.howToHelp.accordion.map((body, i) => <AccordionList i={i} body={body} />)}</div>
       </TTD>
       <Footer />
     </>
