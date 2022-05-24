@@ -18,7 +18,7 @@ const template = {
     title: 'Pequeno em território, gigante em natureza',
     text: 'O Pantanal, apesar de ser o menor bioma do Brasil, traz uma riquíssima fauna e flora',
     values: [
-      { title: '+150 mil', subtitle: 'Quilometros quadrados de extensão' },
+      { title: '+150 mil', subtitle: 'Quilômetros quadrados de extensão' },
       { title: '+970', subtitle: 'Espécies de animais' },
       { title: '+2000', subtitle: 'Espécies de plantas' },
     ],
@@ -116,16 +116,16 @@ const template = {
     sectionName: 'Como ajudar?',
     title: 'Salve o Pantanal',
     content: [
-      <p className="text-base">O pantanal é um lindo bioma que compõe parte do território brasileiro, e não podemos deixar que esta ampla riqueza seja destruída. Portanto, vamos ver algumas formas protegê-lo.</p>,
+      <p className="text-base">O pantanal é um lindo bioma que compõe parte do território brasileiro, e não podemos deixar que esta ampla riqueza seja destruída. Portanto, vamos ver algumas formas de protegê-lo.</p>,
     ],
     accordion: [
       {
         title: "Contribua com organizações que defendem o bioma",
-        content: "Há diversas dessas organizações que atuam diretamente no combate contra as queimadas e ajudam os animais que sofrem pela seca, caça e contrabandos na região. Sendo assim, uma forma de ajudar a cuidar desse belo bioma é apoiando uma dessas organizações."
+        content: "Há diversas organizações que atuam diretamente no combate contra as queimadas e ajudam os animais que sofrem pela seca, caça e contrabandos na região. Sendo assim, uma forma de ajudar a cuidar desse belo bioma é apoiando uma dessas organizações."
       },
       {
         title: "Participe de iniciativas para a proteção do meio ambiente",
-        content: "Busque na sua cidade por projetos de reflorestamento, coletas de lixo e conscientização ambiental, por exemplo. Além disso, reciclar e reutilizar são outros exemplos de ações que podem ser feitas para ajudar não só o pantanal, mas também outros biomas."
+        content: "Busque na sua cidade por projetos de reflorestamento, coletas de lixo e conscientização ambiental, por exemplo. Além disso, reduzir o consumo, reciclar e reutilizar são outros exemplos de ações que podem ser feitas para ajudar não só o pantanal, mas também outros biomas."
       },
       {
         title: "Fiscalize as ações das autoridades",
@@ -133,7 +133,7 @@ const template = {
       },
       {
         title: "Divulgue!",
-        content: "Com o passar do tempo, o número de pesquisas sobre as queimadas no Pantanal diminuiu consideravelmente. Portanto, além de estarmos informados sobre esse tema, também precisamos compartilhar com outros, assim podemos prevenir problemas futuros."
+        content: "Com o passar do tempo, o número de pesquisas sobre as queimadas no Pantanal diminuiu consideravelmente. Portanto, além de estarmos informados sobre esse tema, também precisamos compartilhar com outros. Assim podemos prevenir problemas futuros."
       },
     ],
     background: 'bg-primaryColors-200',
@@ -143,7 +143,7 @@ const template = {
     {
       title: 'Perda de vegetação',
       content:
-        <p className="text-base text-left text-secondaryColors-400">Em 2020, segundo o Instuto Nacional de Pesquisas do Pantanal (INPP), o bioma viu cerca de <strong>23 mil km²</strong> serem consumidos pelas chamas, um aumento de mais de 1000%, quando comparada aos valor de 2000 a 2018 juntos.</p>,
+        <p className="text-base text-left text-secondaryColors-400">Em 2020, segundo o Instuto Nacional de Pesquisas do Pantanal (INPP), o bioma viu mais de <strong>23 mil km²</strong> serem consumidos pelas chamas, um aumento de mais de 1000%, quando comparada aos valores de 2000 a 2018 juntos.</p>,
       chart: (
         <BarChart
           chartData={{
