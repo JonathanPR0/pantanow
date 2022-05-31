@@ -35,7 +35,7 @@ function App() {
         >
           {template.fires.chart.source.title}
         </a>
-        <div className="flex flex-col md:flex-row gap-5 mt-8">
+        <div className="flex flex-col md:flex-row gap-5 mt-8 flex-wrap ">
           {template.cards.map((card) => (
             <Card body={card} key={card.title}>
               {card.chart ? card.chart : null}

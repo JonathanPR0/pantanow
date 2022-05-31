@@ -7,3 +7,12 @@ body {
   background-color: white;
   overflow-x: hidden;
 }
+tr {
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+td,
+th {
+  padding: 0.5rem 1rem;
+}
