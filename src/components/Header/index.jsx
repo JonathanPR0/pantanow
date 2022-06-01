@@ -52,7 +52,7 @@ function Header({ links }) {
               </li>
             ))}
             <li className="uppercase md:hidden py-4 px-8 bg-white text-primaryColors-500 text-base rounded-full">
-              <a href="https://instagram.com/" target="_blank">Conheça outros biomas</a>
+              <a href="https://www.instagram.com/biotrend.meca/" target="_blank">Conheça outros biomas</a>
             </li>
             <li className="text-base font-normal">
               <a
