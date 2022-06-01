@@ -39,6 +39,12 @@ function App() {
           {template.cards.map((card) => (
             <Card body={card} key={card.title}>
               {card.chart ? card.chart : null}
+              {card.source ? <a
+                href={card.source.src}
+                className="text-[10px] px-10 py-2 bg-complementaryColors-500 rounded-md hover:bg-complementaryColors-501 transition-colors md:max-w-2xl md:self-center"
+              >
+                {card.source.title}
+              </a> : null}
             </Card>
           ))}
         </div>

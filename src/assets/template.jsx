@@ -175,6 +175,11 @@ const template = {
       content:
         <p className="text-base text-left text-secondaryColors-400">Em 2020 o Pantanal teve o maior crescimento em área incendiada na comparação com 2019, em mil km². As queimadas do bioma cresceram em <strong>154%</strong>.</p>,
       chart: <Table />,
+      source: {
+        title: 'Fonte: INPE',
+        src: 'https://queimadas.dgi.inpe.br/queimadas/portal-static/estatisticas_estados/',
+      },
+
     },
   ],
 };
