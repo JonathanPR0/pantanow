@@ -5,7 +5,8 @@ import Hamburguer from './Hamburger';
 
 function Header({ links }) {
   const [isOpened, setIsOpened] = useState(false);
-  function handleClick() {
+  function handleClick(e) {
+    e.preventDefault();
     setIsOpened(!isOpened);
   }
   const background = isOpened

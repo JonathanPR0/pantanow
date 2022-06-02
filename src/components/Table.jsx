@@ -10,7 +10,7 @@ function Table() {
         <th>% de variação 2019-2020</th>
       </tr>
       <tr className="bg-white">
-        <td>Panpa</td>
+        <td>Pampa</td>
         <td>1,3</td>
         <td>6,0</td>
         <td>+349%</td>
@@ -35,14 +35,14 @@ function Table() {
       </tr>
       <tr className="bg-white">
         <td >Cerrado</td>
-        <td >15</td>
-        <td >15,1</td>
+        <td >122,7</td>
+        <td >102,4</td>
         <td >-17%</td>
       </tr>
       <tr className="bg-primaryColors-200">
         <td>Caatinga</td>
-        <td>122,7</td>
-        <td>102,4</td>
+        <td>12,4</td>
+        <td>17,8</td>
         <td>-38%</td>
       </tr>
     </table>

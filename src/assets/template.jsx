@@ -43,7 +43,7 @@ const template = {
     title: 'Fauna e flora',
     content: [
       <p className="text-base">Pela sua enorme biodiversidade, o Pantanal é reconhecido Patrimônio Nacional pela Constituição Federal e considerado Reserva da Biosfera e Patrimônio Natural da Humanidade pela Unesco, o que não impede a crescente <strong>desflorestação e destruição</strong>.</p>,
-      <p className="text-base">A presença de uma <strong>grande diversidade de plantas e animais</strong>, como mamíferos, anfíbios, répteis, aves e insetos se deve em parte por sua localização privilegiada. Porém, por causa de sua destruição, há diversas espécies que estão sendo ameaçadas de extinção, como por exemplo a onça-pintada e a arara-azul. Portanto, se não tivermos cuidado pode ser que ocorra um dano irreparável ao bioma.</p>,
+      <p className="text-base">A presença de uma <strong>grande diversidade de plantas e animais</strong>, como mamíferos, anfíbios, répteis, aves e insetos se deve, em parte, por sua localização privilegiada. Porém, por causa de sua destruição, há diversas espécies que estão sendo ameaçadas de extinção, tais como, a onça-pintada e a arara-azul. Portanto, se não tivermos cuidado pode ser que ocorra um dano irreparável ao bioma.</p>,
     ],
     chart: {
       label: 'Espécies presente no Pantanal',
@@ -173,11 +173,11 @@ const template = {
     {
       title: 'Incêndios por bioma em 2020',
       content:
-        <p className="text-base text-left text-secondaryColors-400">Em 2020 o Pantanal teve o maior crescimento em área incendiada na comparação com 2019, em mil km². As queimadas do bioma cresceram em <strong>154%</strong>.</p>,
+        <p className="text-base text-left text-secondaryColors-400">Em 2020, as queimadas no Pantanal, em área incendiada (mil km²), tiveram um aumento de <strong>154%</strong>, quando comparada ao ano de 2019.</p>,
       chart: <Table />,
       source: {
         title: 'Fonte: INPE',
-        src: 'https://queimadas.dgi.inpe.br/queimadas/portal-static/estatisticas_estados/',
+        src: 'https://queimadas.dgi.inpe.br/queimadas/aq1km/',
       },
 
     },
